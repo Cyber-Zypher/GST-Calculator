@@ -24,6 +24,13 @@ CREATE TABLE IF NOT EXISTS transactions (
 cursor.execute(create_table_query)
 db.commit()
 
+print('''      
+  _______________  _____     __         __     __          
+ / ___/ __/_  __/ / ___/__ _/ /_____ __/ /__ _/ /____  ____
+/ (_ /\ \  / /   / /__/ _ `/ / __/ // / / _ `/ __/ _ \/ __/
+\___/___/ /_/    \___/\_,_/_/\__/\_,_/_/\_,_/\__/\___/_/   
+      ''')
+
 def calculate_gst(amount, gst_rate):
     gst_amount = (amount * gst_rate) / 100
     return gst_amount
